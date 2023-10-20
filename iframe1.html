@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        p{
+            text-align: center;
+            text-transform: capitalize;
+            
+            color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 7px 15px;
+  width: 100%;
+  background: #445552d6;
+  text-align: center;
+}
+        
+        .subject-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px auto;
+        }
+        
+        .subject-table th, .subject-table td {
+            border: 2px solid #000000;
+            transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+            margin: 12px;
+            box-shadow: 2px 20px 50px rgba(0,0,0,0.1);
+            padding: 10px;
+            text-align: left;
+        }
+        
+        .subject-table th {
+            background-color: #2b24249a;
+        }
+        
+        .subject-table tr:nth-child(even) {
+            background-color: #5fc3e5cd;
+        }
+        .subject-table tr:nth-child(odd) {
+            background-color: #5fc3e5cd;
+        }
+        
+        .subject-table tr:hover {
+            background-color: #f6efef;
+        }
+        
+    </Style>
+</head>
+<body>
+    <p>My Subjects</p>
+    <table class="subject-table">
+        <thead>
+            <tr class="design">
+                <th>S.No.</th>
+                <th>Subject name</th>
+                <th>Subject Type</th>
+                <th>Syllabus Covered</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Computer Oranisation</td>
+                <td>Practical</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Python</td>
+                <td>Theory</td>
+                <td>60%</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Java</td>
+                <td>Theory</td>
+                <td>12%</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>C and C++</td>
+                <td>Theory</td>
+                <td>54%</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>Android</td>
+                <td>Theory</td>
+                <td>79%</td>
+            </tr>
+            <!-- Add more rows for other subjects -->
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="tailblocks.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Apply Tailblocks-inspired styles */
+        
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    height: 200px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 0.25rem;
+    text-align: left;
+    transition: transform 0.2s ease;
+}
+
+li:hover {
+    transform:translateY(-7px)
+}
+
+h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+/* Navigation buttons */
+button {
+    background-color: #3498db;
+    color: rgb(243, 239, 239);
+    border: none;
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 0.5rem;
+}
+
+button:hover {
+    background-color: #1f6fb2;
+    
+}
+.text-2xl-font-bold-mb-4
+{
+    text: center;
+    font: bold;
+    font-size: x-large;
+    background-color: #e7eaed81;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #687d92b8;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    height: 25%;
+}
+    </style>
+</head>
+<body>
+    <div class="container mx-auto p-4">
+        <h1 class="text-2xl-font-bold-mb-4">Classmates</h1>
+        <ul class="space-y-2">
+            <li class="p-4 bg-white shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold">John Doe</h2>
+                <p>Email: john@example.com</p>
+                <p>Phone: 555-555-5555</p>
+            </li>
+            <li class="p-4 bg-white shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold">Jane Smith</h2>
+                <p>Email: jane@example.com</p>
+                <p>Phone: 555-555-5556</p>
+            </li>
+            <li class="p-4 bg-white shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold">John Wick</h2>
+                <p>Email: johnwick@example.com</p>
+                <p>Phone: 599-555-5555</p>
+            </li>
+            <li class="p-4 bg-white shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold">Jane Carter</h2>
+                <p>Email: janecarter@example.com</p>
+                <p>Phone: 995-555-5556</p>
+            </li>
+            <li class="p-4 bg-white shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold">John Shelby</h2>
+                <p>Email: johnshelby@example.com</p>
+                <p>Phone: 555-5347-5555</p>
+            </li>
+            <li class="p-4 bg-white shadow-lg rounded-md">
+                <h2 class="text-xl font-semibold">Thomas Shelby</h2>
+                <p>Email: tommyshelby@example.com</p>
+                <p>Phone: 555-5565-5556</p>
+            </li>
+            <!-- Add more student entries here -->
+        </ul>
+        <div class="mt-4">
+            <button id="prev" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Previous</button>
+            <button id="next" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-md">Next</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const students = document.querySelectorAll(".bg-white");
+            let currentStudent = 0;
+        
+            function showStudent(index) {
+                for (let i = 0; i < students.length; i++) {
+                    students[i].style.display = "none";
+                }
+                students[index].style.display = "block";
+            }
+        
+            function showNextStudent() {
+                currentStudent = (currentStudent + 1) % students.length;
+                showStudent(currentStudent);
+            }
+        
+            function showPreviousStudent() {
+                currentStudent = (currentStudent - 1 + students.length) % students.length;
+                showStudent(currentStudent);
+            }
+        
+            showStudent(currentStudent);
+        
+            document.getElementById("next").addEventListener("click", showNextStudent);
+            document.getElementById("prev").addEventListener("click", showPreviousStudent);
+        });
+        
+    </script>
+</body>
+</html>

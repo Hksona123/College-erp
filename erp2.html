@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College ERP</title>
+    <link rel="stylesheet" href="./erp2.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1>College ERP</h1>
+        <nav class="header123">
+            <div id="toggle-sidebar" class="toggle-sidebar">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <a class="mr-5 hover:text-gray-900">Home</a>
+            <a class="mr-5 hover:text-gray-900">Students</a>
+            <a class="mr-5 hover:text-gray-900">Courses</a>
+            <a class="mr-5 hover:text-gray-900">Faculty</a>
+            <a class="mr-5 hover:text-gray-900">Events</a>
+            <a class="mr-5 hover:text-gray-900">Contact</a>
+          </nav>
+
+          
+
+
+    </header>
+
+  <div class="sidebar">
+        <ul>
+          <li><a href="#">Academic History</a></li>
+          <li><a href="#">Assessment</a></li>
+          <li><a href="#">Attendance</a></li>
+          <li><a href="#">Course Registration</a></li>
+          <li><a href="#">Fee Payment</a></li>
+          <li><a href="#">Library</a></li>
+          <li><a href="#">Scholarship</a></li>
+          <li><a href="#">Training and Placement</a></li>
+          <li><a href="#">Logout</a></li>
+          
+        </ul>
+      </div>
+
+
+
+<div class="attendance-piechart">
+      <div class="student-profile">
+      
+        <h2 class="sd">Student Dashboard</h2>
+        
+
+        <table>
+            <tr>
+              <th colspan="2" style="text-align: center;">Personal Details</th>
+            </tr>
+            <tr>
+              <td>Name:</td>
+              <td>XYZ</td>
+            </tr>
+            <tr>
+              <td>Program:</td>
+              <td>B.Tech.</td>
+            </tr>
+            <tr>
+              <td>Branch:</td>
+              <td>Computer Science and Engineering</td>
+            </tr>
+            <tr>
+              <td>Registration Code:</td>
+              <td>2020CS0001</td>
+            </tr>
+            <tr>
+              <td>Roll Number:</td>
+              <td>2020CS0648</td>
+            </tr>
+   
+          </table>
+      </div>
+
+    <div class="dashboard">
+        <div class="attendance">
+            <h2>Attendance</h2>
+            <div class="pie-chart">
+                <div class="pieContainer">
+                    <div class="pieBackground"></div>
+                    <div id="pieSlice1" class="hold"><div class="pie"></div>
+                <!-- Pie chart goes here (You'll need to use a charting library) -->
+            </div>
+            <div class="student-attendance">
+                <table>
+                    <tr>
+                        <th colspan="2" style="text-align: center;">Attendance Details</th>
+                    </tr>
+                    <tr>
+                        <td>Total Present</td>
+                        <td>167</td>
+                    </tr>
+                    <tr>
+                        <td>Total Absent</td>
+                        <td>167</td>
+                    </tr>
+                    <tr>
+                        <td>Percentage</td>
+                        <td>50%</td>
+                    </tr>
+                </table>
+        </div>
+</div>
+<br>
+<br
+><br>
+<br>
+<br>
+<br>
+
+
+        <div class="timetable">
+            <h2>Weekly Timetable</h2>
+            <table class="timetable">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9:00am-10:00am</th>
+                        <th>10:00am-11:00am</th>
+                        <th>11:00am-12:00pm</th>
+                        <th>12:00pm-1:00pm</th>
+                        <th>1:00pm-2:00pm</th>
+                        <th>2:00pm-3:00pm</th>
+                        <th>3:00pm-4:00pm</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="dayclass">Monday</td>
+                        <td>Class A</td>
+                        <td>Class B</td>
+                        <td>Class C</td>
+                        <td>LUNCH</td>
+                        <td>Class E</td>
+                        <td>Class F</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <td class="dayclass">Tuesday</td>
+                        <td>Class G</td>
+                        <td>Class H</td>
+                        <td>Class I</td>
+                        <td>LUNCH</td>
+                        <td>Class K</td>
+                        <td>Class L</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <td class="dayclass">Wednesday</td>
+                        <td>Class M</td>
+                        <td>Class N</td>
+                        <td>Class O</td>
+                        <td>LUNCH</td>
+                        <td>Class Q</td>
+                        <td>Class R</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <td class="dayclass">Thursday</td>
+                        <td>Class S</td>
+                        <td>Class T</td>
+                        <td>Class U</td>
+                        <td>LUNCH</td>
+                        <td>Class W</td>
+                        <td>Class X</td>
+                        <td>Break</td>
+                    </tr>
+                    <tr>
+                        <td class="dayclass">Friday</td>
+                        <td>Class Y</td>
+                        <td>Class Z</td>
+                        <td>Class AA</td>
+                        <td>LUNCH</td>
+                        <td>Class CC</td>
+                        <td>Class DD</td>
+                        <td>Break</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Timetable content goes here -->
+        </div>
+        <div class="iframes">
+            <iframe src="./iframe1.html" >MY SUBJECTS</iframe>
+            <iframe src="./iframe2.html">CALENDAR</iframe>
+            <iframe src="./iframe3.html">CLASSMATES</iframe>
+            <iframe src="./iframe4.html"></iframe>
+            <!-- Add more iframe elements as needed -->
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <div class="bg-gray-700 p-3 space-y-10 md:grid grid-cols-2 md:-mt-0 lg:grid-cols-4">
+                <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
+                    <h1 class="text-orange-400 text-xl font-medium">College</h1> <br />
+                    <p class="text-gray-300/80 text-base hover:text-yellow-300 cursor-none"> GT Road Chakeri rooma 
+                        <br /> Kanpur,
+                        PB 208001 <br /> India </p> <br />
+                    <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+                            class="tracking-wide text-orange-400 font-normal">Phone:</strong> 125-9464663 </p>
+                    <p class="text-gray-200/80 text-base hover:text-yellow-300 cursor-pointer"> <strong
+                            class="tracking-wide text-orange-400 font-normal">Email:</strong> Hksona@gmail.com </p>
+                </div>
+                <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
+                    <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Useful Links </h1>
+                    <ul class="mt-2 text-gray-300/80">
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                Home</a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                About Us</a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                Contact</a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                Contact</a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                Privacy policy</a> </li>
+                    </ul>
+                </div>
+                <div class="leading-9 md:w-3/4 md:order-4">
+                    <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Our courses </h1>
+                    <ul class="mt-2 text-gray-300/80">
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> <b class="T">B.Tech</b></a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300"> B.pharma
+                               </a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                BCA</a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                BBA</a> </li>
+                        <li> <i class="fa fa-chevron-right text-orange-400"></i> <a href="#" class="hover:text-yellow-300">
+                                MBA</a> </li>
+                    </ul>
+                </div>
+                <div class="md:order-2 lg:order-last">
+                    <h1 class="text-orange-400 text-xl font-medium tracking-[0.030rem]"> Join Our College </h1> <br />
+                    <p class="text-gray-300/80 w-3/5 leading-7 mb-5 md:w-3/4"> Join 25,000+ others and never miss out on new oppurtnity. </p> <input type="email" placeholder="Enter E-mail Here"
+                        class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus: outline-none focus:border border-orange-600 md:w-1/2 lg:w-3/5" />
+                    <button class="text-white bg-orange-400 p-1 -translate-x-1 rounded-br-xl hover:bg-orange-500"> Send
+                    </button>
+                </div>
+            </div>
+            <div class="bg-gray-900 p-3 flex flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+                <div
+                    class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
+                    <p>@ Copyright <strong>College.</strong>All Rights Reserved</p>
+                    <p>Designed by <span class="text-orange-400">@Hksona</span></p>
+                </div>
+                <div
+                    class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
+                    <a href="#"
+                        class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                            class="fa fa-twitter"></i></a> <a href="#"
+                        class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                            class="fa fa-instagram"></i></a> <a href="#"
+                        class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                            class="fa fa-facebook"></i></a> <a href="#"
+                        class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                            class="fa fa-google"></i></a> <a href="#"
+                        class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200"><i
+                            class="fa fa-linkedin"></i></a> </div>
+            </div>
+            </div>
+            <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+            <script src="https://cdn.tailwindcss.com"></script> 
+    </footer> 
+    <script src="./erp2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>

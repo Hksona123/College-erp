@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            background-color: #33333358;
+            text-align: center;
+        }
+        
+        .links-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .notice {
+            position: relative;
+            padding-left: 25px;
+            margin: 10px 0;
+            background-color: #42a54f42;
+            color: #0a0101;
+        }
+        
+        .notice:before {
+            content: "\2022"; /* Bullet character */
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 20px;
+        }
+        
+        .link a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+            text-align: center;
+        }
+        
+        .link a:hover {
+            color: #1f6fb2;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+        
+        li :hover{
+            transform: translateY(-8px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Important Links and Notices</h1>
+        <ul class="links-list">
+            <li class="notice">Important Notice 1: UDBHAV going to organise on 28th october.</li>
+            <li class="notice">Important Notice 2: Blood Donation Camp.</li>
+            <li class="notice">Important Notice 3: Pragiti Scholarship end date:-28.11.23</li>
+            <li class="link"><a href="https://example.com">GO TO HOME</a></li>
+            <li class="link"><a href="https://example.com">HOSTEL REGISTRATION</a></li>
+        </ul>
+    </div>
+</body>
+</html>

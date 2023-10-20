@@ -1,0 +1,402 @@
+/* Reset default browser styles */
+body, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set a background color and font for the entire page */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sd, h2{
+    text-align: center;
+    font-size: x-large;
+    text-underline-position: below;
+    transform: matrix(20px);
+    text-decoration-color: #007ACC;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: rgba(23, 19, 17, 0.815);
+    width: 100%;
+    height: 150px;
+    border-color: black;
+    border-bottom-style: dashed;
+    border-bottom: 200px black;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+  }
+  
+  /* Dashboard container */
+  .dashboard {
+    /* max-width: 100%; */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    width: 100%;
+  }
+
+  .header123{
+    margin-right: 10px;
+    text-decoration: double;
+    font-size: 20px;
+    text-shadow: 20px #05080a;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-weight: 500;
+    box-sizing: border-box;
+    box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  /* Attendance section */
+  .attendance {
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 2x 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    
+  }
+  
+  /* Pie chart container */
+
+    .pieContainer {
+      align-self: last baseline;
+      border-color: black;
+      border-radius: 3px;
+      box-shadow: 2px 20px 50px;
+      height: 200px;
+      overflow: hidden;
+    }
+    .pieBackground {
+      background-color: rgb(95, 5, 240);
+      position: absolute;
+      width: 197px;
+      height: 197px;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -o-border-radius: 100px;
+      border-radius: 100px;
+      -moz-box-shadow: -1px 1px 3px #000;
+      -webkit-box-shadow: -1px 1px 3px #000;
+      -o-box-shadow: -1px 1px 3px #000;
+      box-shadow: -1px 1px 3px #000;
+    }
+    .pie {
+      position: absolute;
+      width: 197px;
+      height: 197px;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -o-border-radius: 100px;
+      border-radius: 100px;
+      clip: rect(0px, 100px, 100px, 1\0px);
+    }
+    .hold {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      -moz-border-radius: 100px;
+      -webkit-border-radius: 100px;
+      -o-border-radius: 100px;
+      border-radius: 100px;
+      clip: rect(0px, 200px, 200px, 100px);
+    }
+    
+    
+    
+    #pieSlice1 .pie {
+      background-color: #ff430a;
+      -webkit-transform:rotate(150deg);
+      -moz-transform:rotate(150deg);
+      -o-transform:rotate(150deg);
+      transform:rotate(150deg);
+    }
+    
+  
+  
+    .student-attendance {
+      align-items: center;
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      float: right;
+    }
+    
+    .student-attendance h2 {
+      color: rgba(26, 67, 135, 0.888);
+      margin-top: 0;
+    }
+    
+    .student-attendance table {
+      border-collapse: collapse;
+      width: 2000px;
+      
+    }
+    
+    .student-attendance th, td {
+      border: 5px solid rgb(58, 111, 119);
+      padding: 5px;
+    }
+    
+    .student-attendance th {
+      background-color: rgba(32, 43, 44, 0.856);
+      color: white;
+    }
+    
+    .student-attendance button {
+      background-color: green;
+      color: white;
+     
+      border-radius: 5px;
+    }
+  /* Attendance stats */
+  /* .attendance-stats {
+    margin-top: 3px;
+    font-style: bold;
+    font-style: underline;
+    padding: 20px;
+  } */
+  
+  /* Timetable section */
+  .timetable {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 35px;
+  }
+  
+  /* IFrames section */
+  .iframes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  /* Individual iframe styling */
+  .iframes iframe {
+    transition: cubic-bezier();
+    width: 100%;
+    height: 300px;
+    border-style: dotted;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    border-color: rgba(6, 1, 1, 0.912);
+    
+  }
+  
+  /* Footer styling */
+  /* footer {
+    height: 150px;
+    width: 100%;
+    background-color: #05080a;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  } */
+  
+  /* Links within your website */
+  a {
+    color: #007ACC;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+
+.timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.timetable th, .timetable td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.timetable th, .dayclass {
+    background-color: #007ACC;
+    color: #fff;
+}
+
+.timetable tbody tr:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.timetable tbody tr:last-child {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+/* .sidebar {
+  background-color: lightblue;
+  padding: 10px;
+  width: 20%;
+  float: left;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
+
+.sidebar li a {
+  color: black;
+  */
+
+/* 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+} */ */
+/* 
+header {
+    background-color: #007ACC;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+} */
+
+  
+h1 {
+    margin: 0;
+    font-family: 'Times New Roman';
+    font-size: xx-large;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    height: 550px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: left 0.3s;
+    overflow-y: auto;
+}
+
+main {
+    flex: 1;
+    padding: 10px;
+}
+
+.toggle-sidebar {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: transform 0.3s;
+}
+
+/* Sidebar link styles */
+.sidebar a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #007ACC;
+    color: #fff;
+}
+
+/* Active link styles */
+.sidebar a.active {
+    background-color: #007ACC;
+    color: #fff;
+}
+
+
+
+.student-profile {
+  background-color: white;
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 2px 20px 50px rgba(0, 0, 0, 0.1);
+  width: 96%;
+  float: right;
+  overflow: hidden;
+}
+
+.student-profile h2 {
+  color: rgba(26, 67, 135, 0.888);
+  margin-top: 0;
+}
+
+.student-profile table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.student-profile th, td {
+  border: 5px solid rgb(58, 111, 119);
+  padding: 10px;
+}
+
+.student-profile th {
+  background-color: rgba(32, 43, 44, 0.856);
+  color: white;
+}
+
+.student-profile button {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+
+.student-attendance
+{
+  width: max-content;
+  height: 175px;
+}
+
+.bg-gray-700 p-3 space-y-10 md:grid grid-cols-2 md:-mt-0 lg:grid-cols-4{
+  border-radius: 5px;
+  box-shadow: 2px 20px 50px rgba(0,0,0,0.1);
+}
+
+
